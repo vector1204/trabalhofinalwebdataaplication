@@ -16,12 +16,12 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Combinando o diretório do script com o nome do arquivo do banco de dados
-db_path = os.path.join(script_dir, 'times.db')
+db_path = os.path.join(script_dir, 'df_novo.db')
 
 # Estabelecendo conexão com banco de dados SQLite
 
 conn = sqlite3.connect(db_path)
-df_time = pd.read_sql_query('SELECT * FROM time', con=conn)
+df_time = pd.read_sql_query('SELECT * FROM times', con=conn)
 
 df_time['Ranking'] = df_time['Ranking'].astype(int)
 df_time['Time'] = df_time['Time'].astype(str)
