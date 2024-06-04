@@ -27,7 +27,7 @@ tempo.sleep(3)
 
 navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[6]/button/div[2]').click()
 
-time                = navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[5]/table/tbody/tr[1]/td[2]/div/a[1]').text   
+times                = navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[5]/table/tbody/tr[1]/td[2]/div/a[1]').text   
 pontos              = navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[5]/table/tbody/tr[1]/td[3]/span').text   
 pontos_anteriores   =  navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[5]/table/tbody/tr[1]/td[4]/span').text   
 porcentagem         =  navegador.find_element(By.XPATH,'//*[@id="content"]/main/div[2]/section/div/div/div[5]/table/tbody/tr[1]/td[5]/span').text   
