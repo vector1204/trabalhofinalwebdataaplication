@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlalchemy as sqa
 import os
+import sqlite3
 
 
 # Leitura dos dados do banco
