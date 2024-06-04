@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import sqlalchemy as sqa
+import os
+
 
 # Leitura dos dados do banco
 engine = sqa.create_engine("sqlite:///df_novo.db", echo=True)
