@@ -52,7 +52,7 @@ df_times.to_json('../0_bases_originais/dados_originais.json')
 #engine = sqa.create_engine("sqlite:///df_novo.db", echo=True)
 #conn = engine.connect()
 
-#df_times.to_sql('df_novo.db', con=conn)
+#df_times.to_sql('df_novo', con=conn)
 
 navegador.quit()
 
