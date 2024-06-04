@@ -5,8 +5,8 @@ import sqlite3
 import os
 
 # Leitura dos dados do banco
-engine = sqa.create_engine("sqlite:///df_novo.db", echo=True)
-conn = engine.connect()
+#engine = sqa.create_engine("sqlite:///df_novo.db", echo=True)
+#conn = engine.connect()
 
 # Definindo os tipos das colunas
 #df_time = pd.read_sql('times.db', con=conn)
@@ -16,12 +16,12 @@ conn = engine.connect()
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Combinando o diretório do script com o nome do arquivo do banco de dados
-db_path = os.path.join(script_dir, 'banco_ev.db')
+db_path = os.path.join(script_dir, 'times.db')
 
 # Estabelecendo conexão com banco de dados SQLite
 
 conn = sqlite3.connect(db_path)
-df = pd.read_sql_query('SELECT * FROM time', con=conn)
+df_time = pd.read_sql_query('SELECT * FROM time', con=conn)
 
 df_time['Ranking'] = df_time['Ranking'].astype(int)
 df_time['Time'] = df_time['Time'].astype(str)
